@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Counter With Step Control</title>
 </head>
+
 <body>
-    <h4>Counter = <span id = "countValue">0</span></h4>
-    <button id  = "decrement" onclick="decrement()">-</button>
-    <button id  = "reset" onclick="reset()">Reset</button>
-    <button id  = "increment" onclick="increment()">+</button>
+    <h4>Counter = <span id="countValue">0</span></h4>
+
+    <label for="steps">Step:</label>
+    <select id="steps" name="step">
+        <option value="1">1</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+    </select>
+
+    <br>
+
+    <button id="decrement" onclick="decrement()">-</button>
+    <button id="reset" onclick="reset()">Reset</button>
+    <button id="increment" onclick="increment()">+</button>
+
     <script src="interactive-counter-with-step-control.js"></script>
 </body>
+
 </html>
