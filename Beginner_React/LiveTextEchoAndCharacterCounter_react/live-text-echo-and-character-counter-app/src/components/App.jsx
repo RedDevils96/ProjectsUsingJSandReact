@@ -1,6 +1,8 @@
 import TextInput from "./TextInput";
 import TextEcho from "./TextEcho";
 import CharacterCounter from "./CharacterCounter";
+import ClearAction from "./ClearAction";
+
 import { useState } from "react";
 
 function App() {
@@ -14,6 +16,9 @@ function App() {
         textInput={textInput} />
       <CharacterCounter
         textInput={textInput} />
+      <ClearAction
+        textInput={textInput}
+        setTextInput={setTextInput} />
     </>
   )
 }
