@@ -12,6 +12,8 @@ function App() {
         setTextInput={setTextInput} />
       <TextEcho
         textInput={textInput} />
+      <CharacterCounter
+        textInput={textInput} />
     </>
   )
 }

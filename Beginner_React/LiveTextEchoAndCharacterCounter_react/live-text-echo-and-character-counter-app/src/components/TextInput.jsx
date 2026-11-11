@@ -1,5 +1,5 @@
 function TextInput({ textInput, setTextInput }) {
-    function handleChange(e){
+    function handleOnChange(e) {
         setTextInput(e.target.value);
     }
     return (
@@ -8,7 +8,7 @@ function TextInput({ textInput, setTextInput }) {
                 Text Input: <input
                     name="textInput"
                     value={textInput}
-                    onChange={handleChange} />
+                    onChange={handleOnChange} />
             </label>
         </>
     )
