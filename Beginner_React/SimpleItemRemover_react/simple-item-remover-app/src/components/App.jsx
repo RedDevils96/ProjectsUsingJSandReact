@@ -3,7 +3,7 @@ import { useState } from "react";
 import InputTextComponent from "./InputTextComponent";
 import AddComponent from "./AddComponent";
 import ShowFruitsComponent from "./ShowFruitsComponent";
-import DeleteFruitsComponent from "./DeleteFruitsComponent";
+import EmptyListMessageComponent from "./EmptyListMessageComponent";
 
 function App() {
   const [fruitList, setFruitList] = useState([]);
@@ -20,7 +20,10 @@ function App() {
         setFruitList={setFruitList}
         id={id}
         setId={setId}
+        setFruitInput={setFruitInput}
       />
+      <EmptyListMessageComponent
+        fruitList={fruitList} />
       <ShowFruitsComponent
         fruitList={fruitList}
         setFruitList={setFruitList} />

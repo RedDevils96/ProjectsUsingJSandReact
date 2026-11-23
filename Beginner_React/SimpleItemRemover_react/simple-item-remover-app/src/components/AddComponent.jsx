@@ -1,4 +1,4 @@
-function AddComponent({ fruitInput, fruitList, setFruitList, id, setId }) {
+function AddComponent({ fruitInput, fruitList, setFruitList, id, setId, setFruitInput }) {
     function handleOnClick() {
         setFruitList([
             ...fruitList,
