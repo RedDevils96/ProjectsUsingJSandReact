@@ -2,7 +2,8 @@ import { useState } from "react";
 
 import InputTextComponent from "./InputTextComponent";
 import AddComponent from "./AddComponent";
-import ShowApplesComponent from "./ShowApplesComponent";
+import ShowFruitsComponent from "./ShowFruitsComponent";
+import DeleteFruitsComponent from "./DeleteFruitsComponent";
 
 function App() {
   const [fruitList, setFruitList] = useState([]);
@@ -20,8 +21,9 @@ function App() {
         id={id}
         setId={setId}
       />
-      <ShowApplesComponent
-        fruitList={fruitList} />
+      <ShowFruitsComponent
+        fruitList={fruitList}
+        setFruitList={setFruitList} />
     </>
   )
 }
