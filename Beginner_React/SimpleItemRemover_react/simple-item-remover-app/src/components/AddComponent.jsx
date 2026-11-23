@@ -8,6 +8,7 @@ function AddComponent({ fruitInput, fruitList, setFruitList, id, setId, setFruit
             }
         ]);
         setId(prev => prev + 1);
+        setFruitInput("");
     }
     return (
         <>
