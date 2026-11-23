@@ -33,7 +33,8 @@ function App() {
         notesList={notesList}
         setNotesList={setNotesList} />
 
-      <ActiveNotesComponent />
+      <ActiveNotesComponent
+        notesList={notesList} />
 
       <ClearAllNotesButton
         notesList={notesList}
