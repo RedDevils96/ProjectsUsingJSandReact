@@ -12,9 +12,15 @@ function ShowTaskComponent({ taskList, setTaskList }) {
                     task =>
                         <li key={task.taskId} style={
                             (task.taskState) ?
-                                { textDecoration: 'line-through' }
+                                {
+                                    textDecoration: 'line-through',
+                                    color: 'red'
+                                }
                                 :
-                                { textDecoration: 'none' }
+                                {
+                                    textDecoration: 'none',
+                                    color: 'black'
+                                }
                         }>
                             {task.taskValue}
                             <TaskStateComponent
