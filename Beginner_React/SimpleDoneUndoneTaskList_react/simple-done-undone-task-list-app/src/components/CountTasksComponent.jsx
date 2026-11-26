@@ -12,7 +12,7 @@ function CountTasksComponent({ taskList }) {
             {(taskList.length == 0) ?
                 ''
                 :
-                <h4>The number of tasks left to be done =
+                <h4>The number of tasks done =
                     {tasksDone}/{totalTasks}</h4>}
 
         </>
