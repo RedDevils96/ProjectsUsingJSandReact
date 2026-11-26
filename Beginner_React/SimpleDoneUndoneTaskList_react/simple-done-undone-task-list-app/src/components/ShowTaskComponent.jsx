@@ -6,7 +6,7 @@ function ShowTaskComponent({ taskList, setTaskList }) {
         <>
             {(taskList.length == 0) ?
                 '' :
-                <h1>The task List below - </h1>}
+                <h3>The task List below - </h3>}
             <ul>
                 {taskList.map(
                     task =>
