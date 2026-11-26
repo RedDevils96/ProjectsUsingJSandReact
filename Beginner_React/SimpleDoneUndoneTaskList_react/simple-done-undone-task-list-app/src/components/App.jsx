@@ -1,4 +1,5 @@
 import AddButtonComponent from "./AddButtonComponent";
+import ShowEmptyTaskMessageComponent from "./ShowEmptyTaskMessageComponent";
 import ShowTaskComponent from "./ShowTaskComponent";
 import TextInputComponenet from "./TextInputComponenet";
 
@@ -25,6 +26,9 @@ function App() {
         setTaskList={setTaskList}
         setTaskInput={setTaskInput}
       />
+
+      <ShowEmptyTaskMessageComponent
+        taskList={taskList} />
 
       <ShowTaskComponent
         taskList={taskList}
