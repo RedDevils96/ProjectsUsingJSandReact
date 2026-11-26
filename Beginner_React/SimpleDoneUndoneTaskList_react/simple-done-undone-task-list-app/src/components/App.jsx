@@ -1,4 +1,5 @@
 import AddButtonComponent from "./AddButtonComponent";
+import CountTasksComponent from "./CountTasksComponent";
 import ShowEmptyTaskMessageComponent from "./ShowEmptyTaskMessageComponent";
 import ShowTaskComponent from "./ShowTaskComponent";
 import TextInputComponenet from "./TextInputComponenet";
@@ -34,6 +35,9 @@ function App() {
         taskList={taskList}
         setTaskList={setTaskList}
       />
+
+      <CountTasksComponent
+        taskList={taskList} />
 
     </>
   );
